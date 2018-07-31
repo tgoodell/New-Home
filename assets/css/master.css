@@ -2627,6 +2627,7 @@ body {
 
 .topnav .icon {
    display: none;
+   margin: 1%;
 }
 
 .banner {
@@ -2722,6 +2723,8 @@ p {
   background-color: #2196f3;
   color: #ffffff;
   padding: 1%;
+  margin: auto;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 934px) {
