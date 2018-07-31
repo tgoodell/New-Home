@@ -1,30 +1,104 @@
-{{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+<DOCTYPE="HTML">
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/master.css">
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+<head>
+  <title>Tristan Goodell</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicons/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="assets/favicons/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="assets/favicons/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="assets/favicons/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16.png">
+	<link rel="apple-touch-icon" href="assets/favicons/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="assets/favicons/favicon-144.png">
+	<meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+</head>
+<header>
+<div class="banner">
+  <style>
+    .banner {
+      background-image: url(assets/images/banner.png);
+    }
+  </style>
+<div style="text-align:center;padding:30px;padding-bottom:0px;">
 
-{{! The big featured header }}
-<header class="main-header para {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+<img src="assets/images/logo.png" class="logo" style="margin:10px;margin-top:7%;"></img>
+<p class="title" style="margin-top:2%;">Tristan Goodell</p>
 
-
-    <div class="vertical">
-        <div class="main-header-content inner">
-            {{#if @blog.logo}}
-            <div class="blog-logo">
-                <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
-            </div>
-            {{/if}}
-            <h1 class="page-title">{{@blog.title}}</h1>
-            <h2 class="page-description">{{@blog.description}}</h2>
-            {{navigation}}
-            {{> "social_link"}}
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</div>
+</div>
+  <nav>
+  <div class="topnav" id="myTopnav">
+    <div style="text-align: center">
+  <a href="https://tristangoodell.com">Home</a>
+  <a href="https://tristangoodell.com/tag/blog">Blog</a>
+  <a href="https://tristangoodell.com/webdesign">Web Design</a>
+  <a href="https://tristangoodell.com/consulting">Consulting</a>
+  <a href="https://tristangoodell.com/about">About</a>
+  <a href="https://tristangoodell.com/contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+</nav>
 </header>
 
-{{! The main content area on the homepage }}
-<main id="content" class="content" role="main">
+<body>
+  <div class="" style="margin: 1%;">
+    <div class="w3-left pic-text"><img src="assets/images/portfolio.png" style="width:100%;"></img></div>
+    <div class="w3-right pic-text about-text"><h1>Web Design Services</h1><p class="">I offer premium website building services, I can build blogs, portfolios, product showcase sites, and anything else that you may be interested in. Furthermore, I offer additional consulting services to ensure that you make your website the best it can possibly be.</p>
+    <p>Get a free quote and consultation today to ensure that you will have a beautiful website!</p>
+    <br></br>
+  <a href="https://tristangoodell.com/webdesign" class="more">Learn More</a></div>
+<div class="w3-row">
+  <div class="consult-card">
+    <h1 class="w3-bottombar">Personal</h1>
+    <h3 style="font-family: 'Roboto Condensed', sans-serif;">Best For:</h3>
+      <p>- Wanting to learn what it would take to succeed at a hobby or another idea.</p>
+      <p>- Wanting advice on where to go next or where to learn the necessary skills from.</p>
+      <p>- Anyone who wants guidance on what software or hardware they would need to successfully implement their hobby.</p>
 
-    {{! The tag below includes the post loop - partials/loop.hbs }}
-    {{> "loop"}}
+      <a href="https://tristangoodell.com/personal" class="more more-consult">Learn More</a>
+  </div>
+  <div class="consult-card">
+    <h1 class="w3-bottombar">Business</h1>
+    <h3 style="font-family: 'Roboto Condensed', sans-serif;">Best For:</h3>
+    <p>- A small startup who would like advice on where to go next or how to refine your business model.</p>
+    <p>- A small business wanting to learn what skills and resources are necessary for your business plan to succeed.</p/>
+    <p>- A team who would like guidance of the best course of action to transform their dream into a reality.</p>
+    <br></br>
+    <a href="https://tristangoodell.com/business" class="more more-consult">Learn More</a>
+  </div>
+  <div class="consult-card">
+    <h1 class="w3-bottombar">Enterprise</h1>
+    <h3 style="font-family: 'Roboto Condensed', sans-serif;">Best For:</h3>
+      <p>- An established business who wants to improve their current work and continue their success</p>
+      <p>- A bussiness who at first did not get up on the right side of the bed. This consultation will allow you to reflect back upon your mistakes and your triumphs to ensure that you will succeed the second time.</p>
+      <p>- Any bussiness who wants to gain more traffic to their website or improve the user interface of their online product.</p>
 
-</main>
+      <a href="https://tristangoodell.com/enterprise" class="more more-consult">Learn More</a>
+  </div>
+</div>
+  </div>
+</body>
+
+<footer>
+<p style="text-align:center" class="footer">Copyright Tristan Goodell 2018</p>
+</footer>
+</html>

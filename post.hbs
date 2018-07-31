@@ -4,15 +4,46 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! Everything inside the #post tags pulls data from the post }}
-{{#post}}
 
-<header class="main-header post-head para {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if feature_image}}overlay{{/if}} clearfix">
-        <a class="back-button icon-arrow-left" href="https://tristangoodell.com"> Home</a>
-        <a class="subscribe-button" href="https://tristangoodell.com/subscribe"> Subscribe</a>
-    </nav>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/master.css">
+<script type="text/javascript" src="assets/js/nav.js"></script>
+</head>
+<header>
+<div class="banner">
+  <style>
+    .banner {
+      background-image: url(https://tristangoodell.com/assets/images/banner.png);
+      height: 60%;
+    }
+  </style>
+<div style="text-align:center;padding:30px;padding-bottom:0px;">
+
+<img src="https://tristangoodell.com/assets/images/logo.png" class="logo" style="margin:10px;margin-top:7%;"></img>
 </header>
 
+<nav>
+<div class="topnav" id="myTopnav">
+  <div style="text-align: center">
+    <a href="https://tristangoodell.com/">Home</a>
+    <a href="https://tristangoodell.com/tag/blog">Blog</a>
+    <a href="https://tristangoodell.com/webdesign/index.html">Web Design</a>
+    <a href="https://tristangoodell.com/consulting/index.html">Consulting</a>
+    <a href="https://tristangoodell.com/about/index.html">About</a>
+    <a href="https://tristangoodell.com/contact/index.html">Contact</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</a>
+</div>
+</div>
+</nav>
+
+{{#post}}
+
+<div class="main-header post-head {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
+
+</div>
 <main class="content" role="main">
     <article class="{{post_class}}">
 
@@ -34,7 +65,9 @@
             {{> "social_share"}}
         </section>
 
-        <footer class="post-footer">
+        <footer>
+        <p style="text-align:center" class="footer">Copyright Tristan Goodell 2018</p>
+        </footer>
 
         {{! Everything inside the #author tags pulls data from the author }}
         {{#author}}
