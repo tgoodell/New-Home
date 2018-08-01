@@ -2734,7 +2734,7 @@ p {
 }
 
 html {
-
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 header {
@@ -2753,4 +2753,15 @@ h1, h2, h3, h4, h5 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.blog-img {
+  margin:auto;
+  width:50%;
+  border:10px #000000;
+}
+
+@media screen and (max-width: 634px) {
+  .blog-img {
+    width:100%;
+  }
+}
 /*custom.css end*/
