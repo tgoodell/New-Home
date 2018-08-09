@@ -2685,6 +2685,7 @@ p {
 @media screen and (max-width: 1162px) {
   .pic-text {
     width: 98%;
+    margin: auto;
   }
   .about-text {
     padding: 1%;
@@ -2730,6 +2731,13 @@ p {
 @media screen and (max-width: 934px) {
   .consult-card {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer {
+    padding: 2%;
+    font-size: 20px;
   }
 }
 
@@ -2763,5 +2771,9 @@ h1, h2, h3, h4, h5 {
   .blog-img {
     width:100%;
   }
+}
+
+.leftbar {
+  border-left:6px solid ##2196f3
 }
 /*custom.css end*/

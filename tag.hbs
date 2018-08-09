@@ -3,7 +3,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://tristangoodell.com/assets/css/master.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="assets/js/nav.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <script type="text/javascript" src="tristangoodell.com/assets/js/nav.js"></script>
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
   <div style="height: 60%;">
   <div class="banner" style="height: 100%;">
     <style>
@@ -23,15 +34,17 @@
   <nav>
   <div class="topnav" id="myTopnav">
     <div style="text-align: center">
-      <a href="https://tristangoodell.com/" style="font-size: 25px;font-family: 'Roboto Condensed', sans-serif;">Home</a>
-      <a href="https://tristangoodell.com/tag/blog" style="font-size: 25px;font-family: 'Roboto Condensed', sans-serif;">Blog</a>
-      <a href="https://tristangoodell.com/webdesign.html" style="font-size: 25px;font-family: 'Roboto Condensed', sans-serif;">Web Design</a>
-      <a href="https://tristangoodell.com/consulting.html" style="font-size: 25px;font-family: 'Roboto Condensed', sans-serif;">Consulting</a>
-      <a href="https://tristangoodell.com/about.html" style="font-size: 25px;font-family: 'Roboto Condensed', sans-serif;">About</a>
-      <a href="https://tristangoodell.com/contact.html" style="font-size: 25px;font-family: 'Roboto Condensed', sans-serif;">Contact</a>
+      <a href="https://tristangoodell.com/" style="font-size: 25px;margin: 4px;">Home</a>
+      <a href="https://tristangoodell.com/tag/blog" style="font-size: 25px;margin: 4px;">Blog</a>
+      <a href="https://tristangoodell.com/webdesign" style="font-size: 25px;margin: 4px;">Web Design</a>
+      <a href="https://tristangoodell.com/about" style="font-size: 25px;margin: 4px;">About</a>
+      <a href="https://tristangoodell.com/contact" style="font-size: 25px;margin: 4px;">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars" style="font-size:35px;"></i>
   </a>
+  </div>
+  <div style="float:right;">
+    <a href="https://twitter.com/tristangoodell/" class=""style="margin:0;"><image src="../assets/images/twitter.png" style="height:40px;margin:0;"></image></a>
   </div>
   </div>
   </nav>
@@ -45,5 +58,5 @@
 </main>
 
 <footer>
-<p style="text-align:center" class="footer">Copyright Tristan Goodell 2018</p>
+<p style="text-align:center;font-family: 'Roboto Condensed', sans-serif;;margin:auto;" class="footer">Tristan Goodell © 2018</p>
 </footer>
