@@ -955,7 +955,6 @@ body:not(.post-template) .post-title {
     height: 24px;
     float: left;
     margin-right: 9px;
-    border-radius: 100%;
 }
 
 .post-meta a {
