@@ -1,9 +1,4 @@
-{{!< default}}
 
-{{! This is a page template. A page outputs content just like any other post, and has all the same
-    attributes by default, but you can also customise it to behave differently if you prefer. }}
-
-{{! Everything inside the #post tags pulls data from the page }}
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/master.css">
@@ -32,7 +27,6 @@
 <div class="topnav" id="myTopnav">
   <div style="text-align: center">
     <a href="https://tristangoodell.com/" style="font-size: 25px;margin: 4px;">Home</a>
-    <a href="https://tristangoodell.com/tag/blog" style="font-size: 25px;margin: 4px;">Blog</a>
     <a href="https://tristangoodell.com/webdesign" style="font-size: 25px;margin: 4px;">Web Design</a>
     <a href="https://tristangoodell.com/about" style="font-size: 25px;margin: 4px;">About</a>
     <a href="https://tristangoodell.com/contact" style="font-size: 25px;margin: 4px;">Contact</a>
@@ -45,12 +39,8 @@
 </div>
 </div>
 </nav>
+<div class="w3-card w3-mobile" style="width:40%;padding: 1%;margin:auto;margin-top:2%;margin-bottom:2%;">
 {{#post}}
-
-<header class="main-header post-head para {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if feature_image}}overlay{{/if}} clearfix">
-    </nav>
-</header>
 
 <main class="content" role="main">
     <article class="{{post_class}}">
@@ -66,6 +56,7 @@
     </article>
 </main>
 {{/post}}
+</div>
 
 <footer>
 <p style="text-align:center;margin:auto;" class="footer">Tristan Goodell © 2018</p>
