@@ -2579,17 +2579,18 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-   background-color: #2196F3;
+   background-color: #0b5394;
    overflow: hidden;
    font-family: 'Roboto Condensed', sans-serif;
    font-size: 25px;
+   color: #ffffff;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
    float: left;
    display: block;
-   color: #f2f2f2;
+   color: #ffffff;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
@@ -2598,7 +2599,7 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-   background-color: #087DDA;
+   background-color: #073763;
    color: #ffffff;
 }
 @media screen and (max-width: 600px) {
@@ -2631,18 +2632,12 @@ body {
 
 .banner {
   background-image: url(assets/images/banner.png);
-  height: 60%;
+  height: 20%;
 }
 
-.logo {
-  width: 10%;
-  min-width: 7em;
-  box-shadow: 5px 5px 5px #000000;
-}
-
-.title {
-  font-size: 50px;
-  color: #ffffff;
+.logotitle {
+  height: 10%;
+  object-fit: contain;;
 }
 
 .services {
@@ -2653,12 +2648,6 @@ body {
 @media screen and (max-width: 494) {
   .services {
     font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 456px) {
-  .title {
-    font-size: 33px;
   }
 }
 
@@ -2720,7 +2709,7 @@ p {
 }
 
 .footer {
-  background-color: #2196f3;
+  background-color: #0b5394;
   color: #ffffff;
   padding: 1%;
   margin: auto;
@@ -2778,4 +2767,8 @@ h1, h2, h3, h4, h5 {
 
 .kg-width-wide {}
   .kg-width-full {}
+
+body {
+  background-color: #f5f7fb;
+}
 /*custom.css end*/
