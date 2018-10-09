@@ -2603,7 +2603,7 @@ body {
    color: #ffffff;
 }
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:empty) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -2632,7 +2632,6 @@ body {
 
 .banner {
   background-image: url(assets/images/banner.png);
-  height: 20%;
 }
 
 .logotitle {
@@ -2771,4 +2770,5 @@ h1, h2, h3, h4, h5 {
 body {
   background-color: #f5f7fb;
 }
+
 /*custom.css end*/
